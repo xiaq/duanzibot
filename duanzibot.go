@@ -67,7 +67,7 @@ func NewDuanziBot(token string) *DuanziBot {
 }
 
 func main() {
-	buf, err := ioutil.ReadFile("duanzibot.txt")
+	buf, err := ioutil.ReadFile("token.txt")
 	if err != nil {
 		log.Fatalf("cannot read token file: %s", err)
 	}
