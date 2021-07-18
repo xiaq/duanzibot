@@ -21,6 +21,7 @@ func main() {
 	}
 	token := strings.TrimSpace(string(buf))
 
+	rand.Seed(time.Now().Unix())
 	newBot(token).Main()
 }
 
